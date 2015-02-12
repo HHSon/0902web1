@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+	<appenders>
+		<File name="helloworld" fileName="${catalina.home}/logs/helloworld.log">
+			<PatternLayout pattern="%-5level %d{MM-dd HH:mm:ss.SSS} %logger{35} - %msg%n"/>
+		</File>
+	</appenders>
+
+	<loggers>
+		<root level="debug">
+			<appender-ref ref="helloworld" level="debug"/>
+		</root>
+	</loggers>
+</configuration>
